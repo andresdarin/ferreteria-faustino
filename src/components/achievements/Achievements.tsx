@@ -10,22 +10,22 @@ interface Metric {
 export const Achievements: React.FC = () => {
     const metrics: Metric[] = [
         {
-            icon: <Wrench className="w-6 h-6 text-yellow-500" />,
+            icon: <Wrench className="w-6 h-6 text-cyan-400" />,
             label: "Herramientas y ferretería",
             value: "+1.200 productos",
         },
         {
-            icon: <PaintRoller className="w-6 h-6 text-yellow-500" />,
+            icon: <PaintRoller className="w-6 h-6 text-cyan-400" />,
             label: "Pinturas y accesorios",
             value: "+350 tonos y marcas",
         },
         {
-            icon: <Building2 className="w-6 h-6 text-yellow-500" />,
+            icon: <Building2 className="w-6 h-6 text-cyan-400" />,
             label: "Materiales de construcción",
             value: "+800 artículos",
         },
         {
-            icon: <Flame className="w-6 h-6 text-yellow-500" />,
+            icon: <Flame className="w-6 h-6 text-cyan-400" />,
             label: "Estufas y calefacción",
             value: "+150 equipos vendidos",
         },

@@ -67,7 +67,11 @@ export default function Hero({
                         <Link
                             href={cta.href}
                             target={cta.target}
-                            className="group inline-flex items-center gap-2 mt-6 md:mt-8 bg-[#F1DE6E] text-[#171611] font-bold text-sm md:text-base px-6 md:px-8 py-3 md:py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-wide"
+                            className="group inline-flex items-center gap-2 mt-6 md:mt-8 
+               bg-cyan-400 text-[#171611] font-bold text-sm md:text-base 
+               px-6 md:px-8 py-3 md:py-4 rounded-full shadow-xl 
+               hover:shadow-2xl hover:scale-105 active:scale-95 
+               transition-all duration-300 uppercase tracking-wide"
                         >
                             {cta.label}
                             <svg
@@ -76,9 +80,15 @@ export default function Hero({
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
                             >
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2.5}
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                                />
                             </svg>
                         </Link>
+
                     )}
 
                     {/* Indicador de scroll */}
@@ -92,44 +102,45 @@ export default function Hero({
             </div>
 
             <style jsx>{`
-                @keyframes glow {
-                    0%, 100% {
-                        filter: drop-shadow(0 0 10px rgba(241, 222, 110, 0.5));
-                    }
-                    50% {
-                        filter: drop-shadow(0 0 20px rgba(241, 222, 110, 0.8));
-                    }
-                }
+    @keyframes glow {
+        0%, 100% {
+            filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.5)); /* cyan-400 */
+        }
+        50% {
+            filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.8)); /* cyan-400 */
+        }
+    }
 
-                @keyframes bounce-slow {
-                    0%, 100% {
-                        transform: translateY(0);
-                    }
-                    50% {
-                        transform: translateY(-10px);
-                    }
-                }
+    @keyframes bounce-slow {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
 
-                .animate-glow {
-                    animation: glow 2s ease-in-out infinite;
-                }
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite;
+    }
 
-                .animate-bounce-slow {
-                    animation: bounce-slow 2s ease-in-out infinite;
-                }
+    .animate-bounce-slow {
+        animation: bounce-slow 2s ease-in-out infinite;
+    }
 
-                .text-stroke-yellow {
-                    -webkit-text-stroke: 2px #F1DE6E;
-                    color: transparent;
-                    text-shadow: 0 0 30px rgba(241, 222, 110, 0.3);
-                }
+    .text-stroke-yellow {
+        -webkit-text-stroke: 2px #22d3ee; /* cyan-400 */
+        color: transparent;
+        text-shadow: 0 0 30px rgba(34, 211, 238, 0.3); /* cyan-400 */
+    }
 
-                @media (max-width: 768px) {
-                    .text-stroke-yellow {
-                        -webkit-text-stroke: 1.5px #F1DE6E;
-                    }
-                }
-            `}</style>
+    @media (max-width: 768px) {
+        .text-stroke-yellow {
+            -webkit-text-stroke: 1.5px #22d3ee; /* cyan-400 */
+        }
+    }
+`}</style>
+
         </section>
     );
 }

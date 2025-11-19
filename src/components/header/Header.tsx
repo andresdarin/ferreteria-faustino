@@ -57,7 +57,7 @@ export default function Header(): JSX.Element {
                                     }}
                                 >
                                     <span className="relative z-10 uppercase tracking-wide">{link.label}</span>
-                                    <div className="absolute inset-0 bg-linear-to-r from-yellow-300 to-orange-300 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                                    <div className="absolute inset-0 bg-linear-to-r from-cyan-300 to-cyan-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                                 </Link>
                             ) : (
                                 <Link
@@ -123,7 +123,7 @@ export default function Header(): JSX.Element {
                                 }}
                             >
                                 <span className="relative z-10">{link.label}</span>
-                                <div className="absolute inset-0 bg-linear-to-r from-yellow-300 to-orange-300 translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-r from-cyan-300 to-cyan-500 translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                             </Link>
                         ) : (
                             <Link
