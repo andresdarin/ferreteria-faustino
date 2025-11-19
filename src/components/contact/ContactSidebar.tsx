@@ -3,7 +3,7 @@ import { FaPhoneVolume, FaWhatsapp } from "react-icons/fa6";
 
 type Props = {
     phone?: string;        // ejemplo: "+54 9 11 2345-6789"
-    whatsapp?: string;     // ejemplo: "5491123456789" (sin + ni espacios)
+    whatsapp?: string;     // ejemplo: "598091072072" (sin + ni espacios)
     address?: string;
     hours?: string;
     promo?: string;
@@ -11,7 +11,7 @@ type Props = {
 
 export default function ContactSidebar({
     phone = "2622 7082",
-    whatsapp = "5491123456789",
+    whatsapp = "598091072072",
     address = "Av.Gral Rivera 3102, 11300 Montevideo",
     hours = "Lunes a Viernes 8:00 a 18:30hs. Sábados de 8:00 a 13:30hs",
     promo,

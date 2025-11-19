@@ -48,8 +48,8 @@ export async function sendContact(payload: ContactPayload): Promise<EmailJSRespo
         (mod && typeof mod.send === 'function') ? mod : (mod.default || mod);
 
     const templateParams = {
-        from_name: payload.name,
-        from_email: payload.email,
+        name: payload.name,
+        email: payload.email,
         message: payload.message,
         phone: payload.phone ?? '',
         subject: payload.subject ?? 'Contacto desde la landing',
